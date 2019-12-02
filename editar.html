@@ -1,0 +1,64 @@
+{% extends "template.html" %}
+{% block conteudo %}
+      <form action="{{ url_for('atualizar') }}" method="post">
+        <input type="hidden" name="id" id="id" value="{{dados_estab.id}}">
+        <fieldset>
+        <div class="form-group">
+            <label for="rz_social">Razão Social</label>
+            <input type="text" id="rz_social" name="rz_social" class="form-control" value="{{dados_estab.rz_social}}" >
+          </div>
+          <div class="form-group">
+            <label for="cnpj">CNPJ</label>
+            <input type="text" id="cnpj" name="cnpj" class="form-control" value="{{dados_estab.cnpj}}" >
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email" class="form-control" value="{{dados_estab.email}}" >
+          </div>
+          <div class="form-group">
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" name="endereco" class="form-control" value="{{dados_estab.endereco}}">
+          </div>
+          <div class="form-group">
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" name="cidade" class="form-control" value="{{dados_estab.cidade}}" >
+          </div>
+          <div class="form-group">
+            <label for="estado">Estado</label>
+            <input type="text" id="estado" name="estado" class="form-control" value="{{dados_estab.estado}}" >
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="telefone" class="form-control" value="{{dados_estab.telefone}}" >
+          </div>
+            <div class="form-group">
+            <label for="dtcadastro">Data Cadastro</label>
+            <input type="text" id="dtcadastro" name="dtcadastro" class="form-control" value="{{dados_estab.dtcadastro}}" >
+          </div>
+            <div class="form-group">
+            <label for="categoria">Categoria</label>
+            <input type="text" id="categoria" name="categoria" class="form-control" value="{{dados_estab.categoria}}">
+          </div>
+            <div class="form-group">
+            <label for="status">Status</label>
+            <input type="text" id="status" name="status" class="form-control" value="{{dados_estab.status}}">
+          </div>
+            <div class="form-group">
+            <label for="agencia">Agencia</label>
+            <input type="text" id="agencia" name="agencia" class="form-control" value="{{dados_estab.agencia}}">
+          </div>
+            <div class="form-group">
+            <label for="conta">Conta</label>
+            <input type="text" id="conta" name="conta" class="form-control" value="{{dados_estab.conta}}">
+          </div>
+          <button testadoype="submit" class="btn btn-primary btn-salvar">Salvar</button>
+          <a class="btn btn-danger" href="{{ url_for('index') }}">Voltar</a>
+        </fieldset>
+      </form>
+   {% endblock %}
+
+
+
+
+
+

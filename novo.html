@@ -1,0 +1,63 @@
+{% extends "template.html" %}
+{% block conteudo %}
+
+      <form action="{{ url_for('criar') }}" method="post">
+        <fieldset>
+          <div class="form-group">
+            <label for="rz_social">Razão Social</label>
+            <input type="text" id="rz_social" name="rz_social" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="cnpj">CNPJ</label>
+            <input type="text" id="cnpj" name="cnpj" class="form-control" >
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" name="endereco" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" name="cidade" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="estado">Estado</label>
+            <input type="text" id="estado" name="estado" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="telefone" class="form-control">
+          </div>
+            <div class="form-group">
+            <label for="dtcadastro">Data Cadastro</label>
+            <input type="text" id="dtcadastro" name="dtcadastro" class="form-control">
+          </div>
+            <div class="form-group">
+            <label for="categoria">Categoria</label>
+            <input type="text" id="categoria" name="categoria" class="form-control">
+          </div>
+            <div class="form-group">
+            <label for="status">Status</label>
+            <input type="text" id="status" name="status" class="form-control">
+          </div>
+            <div class="form-group">
+            <label for="agencia">Agencia</label>
+            <input type="text" id="agencia" name="agencia" class="form-control">
+          </div>
+            <div class="form-group">
+            <label for="conta">Conta</label>
+            <input type="text" id="conta" name="conta" class="form-control">
+          </div>
+          <button testadoype="submit" class="btn btn-primary btn-salvar">Salvar</button>
+          <a class="btn btn-danger" href="{{ url_for('index') }}">Voltar</a>
+        </fieldset>
+      </form>
+   {% endblock %}
+
+
+
+
+
